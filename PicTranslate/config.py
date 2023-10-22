@@ -1,0 +1,5 @@
+appid = '20231009001841411'
+appkey = 'zv0UPgq7LjjITbsTV1om'
+from_lan = 'zh'
+to_lan = 'en'
+api_path = 'https://fanyi-api.baidu.com/api/trans/vip/translate'
