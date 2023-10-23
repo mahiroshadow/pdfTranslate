@@ -2,22 +2,10 @@ from PIL import Image, ImageDraw, ImageFont
 from config import *
 import requests
 import random
-import json
 from hashlib import md5
 from paddleocr import PaddleOCR, draw_ocr, PPStructure, save_structure_res
-import math
 import time
-import tabula
 import pandas as pd
-import fitz
-import os
-# import office
-import cv2
-import flask
-# from PyPDF2 import PdfReader, PdfWriter
-from PyPDF4 import PdfFileReader, PdfFileWriter
-
-
 '''
 # pdf转换为图片
 def pdf2image(pdfPath, imagePath):
@@ -34,10 +22,8 @@ def pdf2image(pdfPath, imagePath):
 #     save_structure_res(result, save_folder,
 #                        os.path.basename(img_path).split('.')[0])
 
+
 # 翻译pdf中的图片信息
-
-
-@app.route('/translatePic', methods=["post"])
 def translatePic():
     filepath = './1.png'
     # 打开图片
